@@ -3,17 +3,18 @@ package dzien_5.obiektowe.enumy;
 public class Main {
     public static void main(String[] args) {
 
-        Bilet normalny = Bilet.NORMALNY;
-        Bilet ulgowy = Bilet.ULGOWY;
+        Bilet normalny = Bilet.NORMALNY_CALODNIOWY;
+        Bilet ulgowy = Bilet.ULGOWY_GODZINNY;
+        Bilet brak = Bilet.BRAK_BILETU;
 
 
+        ulgowy.wyswietlDaneOBilecie();
+        normalny.wyswietlDaneOBilecie();
+        brak.wyswietlDaneOBilecie();
 
-        System.out.println(ulgowy);
-        System.out.println(Bilet.ULGOWY.getCena());
 
-        System.out.println(normalny);
-        System.out.println(normalny.getCena());
-
+        Bilet zwrocony = Bilet.dobierzBilet(14, 100, 6.0d);
+        zwrocony.wyswietlDaneOBilecie();
 
     }
 }
