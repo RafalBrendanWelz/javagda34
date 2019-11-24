@@ -9,11 +9,12 @@ public class Main {
 
         KontoBankowe cwaniaczka = new KontoBankowe(666l, 0l);
 
-        andrzeja.przelewWychodzacy(beaty,1l);
+        andrzeja.przelewWychodzacy(beaty, 1l);
 
         System.out.println(andrzeja.numerKonta);
 
-
+/*
         cwaniaczka.stanKonta = beaty.stanKonta; // to nie dziala po zastosowaniu enkapsulacji
+  */
     }
 }

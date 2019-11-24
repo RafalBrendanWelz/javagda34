@@ -11,5 +11,7 @@ public class Main {
 
         ulamek1.wypisz();
 
+        ulamek1.toString();
+
     }
 }
