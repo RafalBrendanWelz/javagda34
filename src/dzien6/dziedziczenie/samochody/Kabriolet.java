@@ -8,6 +8,7 @@ public class Kabriolet extends Samochod {
         this.dach = dach;
     }
 
+
     public void schowajDach(){
         this.dach = false;
     }
