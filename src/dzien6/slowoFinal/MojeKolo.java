@@ -3,7 +3,7 @@ package dzien6.slowoFinal;
 
 public class MojeKolo /*extends Kolo*/ {
 
-
+    /*
     @Override
     public Kolo(double promien) {
 
@@ -23,5 +23,5 @@ public class MojeKolo /*extends Kolo*/ {
         this.PI = 5;
 
     }
-
+*/
 }

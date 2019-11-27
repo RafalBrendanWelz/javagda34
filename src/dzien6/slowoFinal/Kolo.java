@@ -4,7 +4,7 @@ public class Kolo {
     protected double promien;
     protected final double PI = 3.14;
 
-    public Kolo(final double promien) {
+    public Kolo( double promien) {
         promien *=2;
 
         this.promien = promien;
