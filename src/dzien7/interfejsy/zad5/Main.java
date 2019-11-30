@@ -7,7 +7,7 @@ public class Main {
 
         Student jan = new Student("Jan", "Kowalski", 123);
         Student ewa = new Student("Ewa", "Stan", 500);
-        Student artur = new Student("Artur", "Suchocki", 100);
+        Student artur = new Student("Dartur", "Nowak", 1);
         Student brian = new Student("Brian", "Nowak", 1);
 
 

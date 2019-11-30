@@ -1,6 +1,6 @@
 package dzien7.interfejsy.zad5;
 
-public class Student implements Comparable{
+public class Student implements Comparable {
     private String imie, nazwisko;
     private int numerAlbumu;
 
@@ -13,12 +13,16 @@ public class Student implements Comparable{
     @Override
     public int compareTo(Object o) {
         Student that = (Student) o;
-        if(this.numerAlbumu > that.numerAlbumu){
+        if (this.numerAlbumu > that.numerAlbumu) {
             return -1;
-        } else if (this.numerAlbumu < that.numerAlbumu){
+        } else if (this.numerAlbumu < that.numerAlbumu) {
             return 1;
         } else {
-            return 0;
+            if (this.nazwisko.compareTo(that.nazwisko) == 0) {
+                return this.imie.compareTo(that.imie);
+            } else {
+                return this.nazwisko.compareTo(that.nazwisko);
+            }
         }
     }
 
