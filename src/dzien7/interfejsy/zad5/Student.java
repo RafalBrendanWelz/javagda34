@@ -13,9 +13,9 @@ public class Student implements Comparable {
     @Override
     public int compareTo(Object o) {
         Student that = (Student) o;
-        if (this.numerAlbumu > that.numerAlbumu) {
+        if (this.numerAlbumu < that.numerAlbumu) {
             return -1;
-        } else if (this.numerAlbumu < that.numerAlbumu) {
+        } else if (this.numerAlbumu > that.numerAlbumu) {
             return 1;
         } else {
             if (this.nazwisko.compareTo(that.nazwisko) == 0) {
