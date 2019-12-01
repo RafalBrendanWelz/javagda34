@@ -1,8 +1,10 @@
 package dzien8.para;
 
-public class Para <T> {
+public class Para <T,S> {
     private T lewy;
     private T prawy;
+
+    private S srodkowy;
 
     String opis;
 
