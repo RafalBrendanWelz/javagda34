@@ -16,5 +16,20 @@ public class Main {
 
         mojGaraz.zaparkuj(stary);
 
+
+
+
+
+
+
+
+
+    }
+
+
+    public void utworzTabliceOZadanymRozmiarze( int rozmiar){
+        String [] tablica = new String[rozmiar];
+
+
     }
 }

@@ -1,5 +1,7 @@
 package dzien7.interfejsy.zad5;
 
+import java.util.Objects;
+
 public class Student implements Comparable {
     private String imie, nazwisko;
     private int numerAlbumu;
@@ -33,5 +35,20 @@ public class Student implements Comparable {
                 ", nazwisko='" + nazwisko + '\'' +
                 ", numerAlbumu=" + numerAlbumu +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return numerAlbumu == student.numerAlbumu &&
+                Objects.equals(imie, student.imie) &&
+                Objects.equals(nazwisko, student.nazwisko);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(imie, nazwisko, numerAlbumu);
     }
 }
