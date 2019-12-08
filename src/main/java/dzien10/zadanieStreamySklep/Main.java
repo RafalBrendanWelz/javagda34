@@ -2,6 +2,9 @@ package dzien10.zadanieStreamySklep;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,6 +19,8 @@ public class Main {
 
         Sklep dealer = new Sklep(listaSamochodowDlaSklepu);
         dealer.pracuj();
+
+
 
 
     }

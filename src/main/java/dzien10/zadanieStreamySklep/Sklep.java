@@ -4,14 +4,15 @@ import lombok.Setter;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
 @Setter
 public class Sklep {
-    private String filtrMarki;
-    private String filtrKoloru;
-    private String filtrModelu;
+    private Optional<String> filtrMarki;
+    private Optional<String> filtrKoloru;
+    private Optional<String> filtrModelu;
     private double filtrCeny;
     private int filtrWieku;
 
@@ -44,15 +45,15 @@ public class Sklep {
             switch (a) {
                 case 1:
                     System.out.println("Podaj szukana marke:");
-                    setFiltrMarki(scanner.nextLine().trim());
+                    setFiltrMarki(Optional.ofNullable(scanner.nextLine().trim()));
                     break;
                 case 2:
                     System.out.println("Podaj szukany kolor:");
-                    setFiltrKoloru(scanner.nextLine().trim());
+                    setFiltrKoloru(Optional.ofNullable(scanner.nextLine().trim()));
                     break;
                 case 3:
                     System.out.println("Podaj szukany model:");
-                    setFiltrModelu(scanner.nextLine().trim());
+                    setFiltrModelu(Optional.ofNullable(scanner.nextLine().trim());
                     break;
                 case 4:
                     System.out.println("Podaj max cene:");
@@ -88,12 +89,17 @@ public class Sklep {
     }
 
     private void wypisz() {
-        for (Samochod s: przefiltrowanaListaSamochodow) {
+        for (Samochod s : przefiltrowanaListaSamochodow) {
             System.out.println(s);
         }
     }
 
     private void znajdz() {
+        filtrMarki.ifPresent((s) -> this.przefiltrowanaListaSamochodow = przefiltrowanaListaSamochodow.stream()
+                        .filter(auto -> auto.getMarka().equalsIgnoreCase(s))
+                        .collect(Collectors.toList())
+        );
+
         if (filtrMarki != null) {
             przefiltrowanaListaSamochodow = przefiltrowanaListaSamochodow.stream()
                     .filter(auto -> auto.getMarka().equalsIgnoreCase(filtrMarki))
