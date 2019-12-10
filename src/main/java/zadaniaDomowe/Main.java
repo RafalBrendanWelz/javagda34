@@ -517,7 +517,7 @@ public class Main {
 // 38. Wypisz średnie zużycie kawy na pracownika (wypisz w postaci proporcji. Jeśli firma kupiła 30 kilogramów i ma 20 pracowników to ma 1.5 kg / pracownika [w całości okresu])
 // 39. Wypisz jaki produkt poza paliwem cieszy się największą popularnością (zwróć go) (find first)
 // 40. Znajdź produkty które były kupowane zarówno w kilogramach jak i w sztukach
-// 40. Wymyśl 5 ciekawych zapytań i spróbuj je zrealizować. Najciekawsze polecenie otrzyma nagrodę-niespodziankę z Baltimore :P
+// 40. Wymyśl 5 ciekawych zapytań i spróbuj je zrealizować. 
     }
 
 }
