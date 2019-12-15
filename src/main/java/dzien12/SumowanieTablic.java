@@ -2,6 +2,8 @@ package dzien12;
 
 public class SumowanieTablic {
     public static void main(String[] args) {
+        int[] tablica = {1,2,3,4,5};
+        System.out.println(sumujRekurencyjnie(tablica,0));
 
     }
 
