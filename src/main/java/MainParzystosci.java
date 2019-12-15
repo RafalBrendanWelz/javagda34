@@ -12,6 +12,7 @@ public class MainParzystosci {
         // wyswietlenie wyniku zapisanego w zmiennej result
         System.out.println(result);
 
+
         // deklaracja 4-elementowej tablicy Stringow
         String [] tablicaWynikow = new String[4];
 

@@ -506,7 +506,7 @@ public class Main {
 // 29. Wypisz ilość kilogramów cukru zużywaną przez "Detroit Bakery"
 //        company_29_detroit_bakery(companies);
 // 30. Wypisz wszystkie zakupy firmy "Solwit".
-        company_30_solwit_shopping(companies);
+        //company_30_solwit_shopping(companies);
 // 31. Wypisz wszystkie produkty które są tańsze (jednostkowo) niż 3$.
 // 32. Wypisz ile sprzedano najtańszego produktu
 // 33. Firma "Take me home" zajmuje się transportem. Na początku działalności kupiła wiele samochodów do użytku. Oblicz ile litrów paliwa (średnio) spalają ich samochody (zakładamy że wszystkie palą benzynę i że tankowane są wszystkie.

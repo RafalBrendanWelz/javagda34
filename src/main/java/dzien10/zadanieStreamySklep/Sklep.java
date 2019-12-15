@@ -53,7 +53,7 @@ public class Sklep {
                     break;
                 case 3:
                     System.out.println("Podaj szukany model:");
-                    setFiltrModelu(Optional.ofNullable(scanner.nextLine().trim());
+                    setFiltrModelu(Optional.ofNullable(scanner.nextLine().trim()));
                     break;
                 case 4:
                     System.out.println("Podaj max cene:");
@@ -100,32 +100,6 @@ public class Sklep {
                         .collect(Collectors.toList())
         );
 
-        if (filtrMarki != null) {
-            przefiltrowanaListaSamochodow = przefiltrowanaListaSamochodow.stream()
-                    .filter(auto -> auto.getMarka().equalsIgnoreCase(filtrMarki))
-                    .collect(Collectors.toList());
-        }
-        if (filtrKoloru != null) {
-            przefiltrowanaListaSamochodow = przefiltrowanaListaSamochodow.stream()
-                    .filter(auto -> auto.getKolor().equalsIgnoreCase(filtrKoloru))
-                    .collect(Collectors.toList());
-        }
-        if (filtrModelu != null) {
-            przefiltrowanaListaSamochodow = przefiltrowanaListaSamochodow.stream()
-                    .filter(auto -> auto.getModel().equalsIgnoreCase(filtrModelu))
-                    .collect(Collectors.toList());
-        }
 
-        if (filtrCeny != 0) {
-            przefiltrowanaListaSamochodow = przefiltrowanaListaSamochodow.stream()
-                    .filter(auto -> auto.getCena() < filtrCeny)
-                    .collect(Collectors.toList());
-        }
-
-        if (filtrWieku != 0) {
-            przefiltrowanaListaSamochodow = przefiltrowanaListaSamochodow.stream()
-                    .filter(auto -> auto.getWiek() < filtrWieku)
-                    .collect(Collectors.toList());
-        }
     }
 }
